@@ -1,0 +1,12 @@
+file_format: "1"
+id: leap55
+name: leap55
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+siblings:
+  - leap55_left
+  - leap55_right
+

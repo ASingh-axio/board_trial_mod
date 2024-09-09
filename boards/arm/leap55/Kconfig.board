@@ -1,0 +1,17 @@
+# nRF52840-MDK board configuration
+
+#config BOARD_LEAP55_LEFT
+#    def_bool $(shields_list_contains,oixa5_left)
+    
+
+#config BOARD_LEAP55_RIGHT
+#    def_bool $(shields_list_contains,oixa5_right)
+
+
+config BOARD_LEAP55_LEFT
+    bool "leap55 left"
+    depends on SOC_NRF52840_QIAA
+
+config BOARD_LEAP55_RIGHT
+    bool "leap55 right"
+    depends on SOC_NRF52840_QIAA

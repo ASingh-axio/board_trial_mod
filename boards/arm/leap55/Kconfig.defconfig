@@ -1,0 +1,43 @@
+# Copyright (c) 2018 makerdiary.com
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_LEAP55_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Leap55!"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # BOARD_LEAP55_LEFT
+
+
+if BOARD_LEAP55_LEFT || BOARD_LEAP55_RIGHT
+
+config BOARD
+    default "leep55!!!!"
+
+config ZMK_SPLIT
+    default y
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+	default BT
+
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
+
+endif # BOARD_LEAP55_LEFT || BOARD_LEAP55_RIGHT
