@@ -16,4 +16,9 @@
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
 #
----
+include:
+  - board: leap55_left
+    snippet: zmk-usb-logging
+  - board: leap55_right
+    snippet: zmk-usb-logging
+
