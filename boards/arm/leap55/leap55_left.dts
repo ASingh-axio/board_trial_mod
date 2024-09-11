@@ -5,25 +5,6 @@
  */
 
 #include "leap55.dtsi"
-/*
-
-/{    
-aliases {
-        led-main = &led_0;
-};
-
-leds {
-        compatible = "gpio-leds";
-        status = "okay";
-        led_0: led_0 {
-            gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-        };
-};        
-
-};
-
-*/
-
 
 &kscan0 {
         input-gpios
@@ -48,6 +29,20 @@ leds {
             ;        
 };
 
+/{    
+aliases {
+        led-main = &led_0;
+};
+
+leds {
+        compatible = "gpio-leds";
+        status = "okay";
+        led_0: led_0 {
+            gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        };
+};        
+
+};
 
 &pinctrl {
     // Other pinctrl definitions for other hardware
