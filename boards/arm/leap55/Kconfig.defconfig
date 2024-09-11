@@ -15,7 +15,7 @@ endif # BOARD_LEAP55_LEFT
 if BOARD_LEAP55_LEFT || BOARD_LEAP55_RIGHT
 
 config BOARD
-    default "leep55!!!!"
+    default "leap55"
 
 config ZMK_SPLIT
     default y
