@@ -58,8 +58,8 @@
 
         default_layer {
             bindings = <
-    &kp C_VOLUME_DOWN &bl BL_INC &kp C                        &kp H &kp I 
-    &kp D &kp E &kp F &kp G                  &kp J &kp K &kp L &kp M &kp N &kp O
+    &kp A &kp B &kp C                        &kp H &kp I 
+    &kp D &kp E &kp F &kp G                  &kp J &kp K &kp L &kp M &kp N 
             >;
         };
     };
